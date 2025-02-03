@@ -144,6 +144,10 @@
   margin: 0;
 }
 
+.text_section_kak {
+  font-weight: 400;
+}
+
 .main {
   display: flex;
   flex-direction: column;

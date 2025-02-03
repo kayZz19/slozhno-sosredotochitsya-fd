@@ -26,7 +26,7 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
-@media(prefers-color-scheme:light){
+@media (prefers-color-scheme:light) {
   :root {
     --bg-image-header: url(../images/cover-image-light.png);
     --color-button: rgba(53, 52, 48, 1);

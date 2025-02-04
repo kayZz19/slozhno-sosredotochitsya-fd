@@ -7,7 +7,7 @@
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "IBM Plex mono", serif;
+  font-family: "IBM Plex mono", serif, monospace;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -16,7 +16,7 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  font-family: "IBM Plex mono", serif;
+  font-family: "IBM Plex mono", serif, monospace;
   height: 100vh;
   min-height: 668px;
   padding: 0 10px;
@@ -37,10 +37,10 @@
   text-transform: lowercase;
   background-color: transparent;
   border: 1px transparent solid;
-  padding: 1.5px 13px;
+  padding: 1.5px 12px;
   font-size: 18px;
+  font-family: "IBM Plex mono", serif, monospace;
   font-weight: 400;
-  letter-spacing: 1px;
   color: var(--theme-color);
 }
 
@@ -53,11 +53,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px var(--color-button-hover) solid;
+  border: 1px var(--color-button-hover) solid; /* ревьер написал, что нет прозрачности в свойстве, хотя она указана в переменной */
 }
 
 .header__theme-menu-button:focus-visible {
-  text-decoration: underline;
+  border-bottom: 1px solid;
   outline: none;
 }
 
@@ -121,8 +121,8 @@
 }
 
 .title {
-  font-family: "IBM Plex Mono", sans-serif;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: "IBM Plex mono", serif, monospace;
+  text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--accent-title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
@@ -135,7 +135,7 @@
 }
 
 .header_text {
-  font-family: "IBM Plex mono", sans-serif;
+  font-family: "IBM Plex mono", serif, monospace;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
@@ -144,7 +144,7 @@
   margin: 0;
 }
 
-.text_section_kak {
+.text_section_how {
   font-weight: 400;
 }
 
@@ -165,7 +165,7 @@
   color: var(--section-title);
   font-size: 18px;
   font-weight: 700;
-  font-family: "IBM Plex mono";
+  font-family: "IBM Plex mono", serif, monospace;
   margin: 0;
 }
 
@@ -184,7 +184,7 @@
 .card_title {
   background-color: var(--bg-card);
   color: var(--color-card);
-  font-family: "IBM Plex mono";
+  font-family: "IBM Plex mono", serif, monospace;
   font-size: 18px;
   font-weight: 400;
   margin: 0;
@@ -192,7 +192,7 @@
 
 .text_section {
   color: var(--text-section);
-  font-family: "IBM Plex mono";
+  font-family: "IBM Plex mono", serif, monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -300,24 +300,23 @@
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-  .section_pochemy {
+  .section_why {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  .section_chto {
+  .section_what {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 19px;
   }
-
-  .card_list_chto {
+  .card_list_what {
     grid-column: span 2;
   }
-  .section_title_chto {
+  .section_title_what {
     display: grid;
     grid-template-columns: min-content;
   }
-  .section_kak {
+  .section_how {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -360,20 +359,20 @@
     align-items: center;
     padding: 4px 20px 0px 20px;
   }
-  .card_list_chto {
+  .card_list_what {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
   .main {
     padding: 0 20;
   }
-  .section_kak {
+  .section_how {
     gap: 11px;
   }
-  .section_pochemy {
+  .section_why {
     gap: 11px;
   }
-  .section_title_chto {
+  .section_title_what {
     grid-template-columns: minmax(min-content, 1fr);
   }
 }

@@ -6,8 +6,9 @@
 
 :root.theme-light {
   --bg-image-header: url(../images/cover-image-light.png);
+  --bg-color-header: #fff1f7;
   --color-button: rgba(53, 52, 48, 1);
-  --color-button-hover: rgba(53, 52, 48, 1);
+  --color-button-hover: rgba(53, 52, 48, 0.4);
   --accent-color: rgba(255, 141, 203, 1);
   --accent-title-color: rgba(255, 194, 230, 1);
   --bg-header-text: rgba(255, 141, 203, 1);
@@ -17,7 +18,7 @@
   --color-card: rgba(53, 52, 48, 1);
   --text-section: rgba(53, 52, 48, 1);
   --theme-color: rgba(53, 52, 48, 1);
-  --border-decorate: rgba(255, 194, 230, 1);
+  --border-decorate: rgba(53, 52, 48, 1);
   --link-color: rgba(255, 194, 230, 1);
   --rec-display: none;
 }

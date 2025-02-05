@@ -1,5 +1,4 @@
 .page {
-  margin: 0;
   background-image: var(--bg-image-header);
   background-color: var(--bg-color-header);
   background-repeat: no-repeat;
